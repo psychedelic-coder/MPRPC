@@ -1,7 +1,6 @@
 #include <unistd.h>
 #include <mylogger/Logger.h>
 #include <memory>
-#include <mylogger/LogFile.h>
 
 std::unique_ptr<mylogger::LogFile> g_logFile;
 
