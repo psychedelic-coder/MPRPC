@@ -1,0 +1,2 @@
+/usr/bin/ar qc /home/liuchen/项目/MPRPC/lib/libmprpc.a CMakeFiles/mprpc.dir/src/MprpcApplication.cc.o CMakeFiles/mprpc.dir/src/MprpcConfig.cc.o CMakeFiles/mprpc.dir/src/RpcProvider.cc.o CMakeFiles/mprpc.dir/src/user.pb.cc.o
+/usr/bin/ranlib /home/liuchen/项目/MPRPC/lib/libmprpc.a

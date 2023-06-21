@@ -1,0 +1,339 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						8,
+						10,
+						11
+					],
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "example",
+					"childIndexes" : 
+					[
+						2,
+						5
+					],
+					"jsonFile" : "directory-example-Debug-b6fca4a6d0a37c6ae6b9.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "example"
+				},
+				{
+					"build" : "example/caller",
+					"childIndexes" : 
+					[
+						3,
+						4
+					],
+					"jsonFile" : "directory-example.caller-Debug-f9d6ea7088e14e8f00d6.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "example/caller"
+				},
+				{
+					"build" : "example/caller/Login",
+					"jsonFile" : "directory-example.caller.Login-Debug-a7fb310a6cf03c40598d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "example/caller/Login",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "example/caller/GetFriendsLists",
+					"jsonFile" : "directory-example.caller.GetFriendsLists-Debug-2f8d24ef37e977748590.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "example/caller/GetFriendsLists",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "example/callee",
+					"childIndexes" : 
+					[
+						6,
+						7
+					],
+					"jsonFile" : "directory-example.callee-Debug-1eaa0cd6ad8e395f31c5.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "example/callee"
+				},
+				{
+					"build" : "example/callee/Login",
+					"jsonFile" : "directory-example.callee.Login-Debug-ab8730713be886d07977.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 0,
+					"source" : "example/callee/Login",
+					"targetIndexes" : 
+					[
+						7
+					]
+				},
+				{
+					"build" : "example/callee/GetFriendsLists",
+					"jsonFile" : "directory-example.callee.GetFriendsLists-Debug-5587851dbf74fde1aa8f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 0,
+					"source" : "example/callee/GetFriendsLists",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"build" : "mymuduo",
+					"childIndexes" : 
+					[
+						9
+					],
+					"jsonFile" : "directory-mymuduo-Debug-696fa1ded8dcc800dcaa.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "mymuduo",
+					"targetIndexes" : 
+					[
+						6
+					]
+				},
+				{
+					"build" : "mymuduo/test",
+					"jsonFile" : "directory-mymuduo.test-Debug-59ad8cad089b2edb6c35.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 8,
+					"projectIndex" : 0,
+					"source" : "mymuduo/test",
+					"targetIndexes" : 
+					[
+						8,
+						9
+					]
+				},
+				{
+					"build" : "mprpc",
+					"jsonFile" : "directory-mprpc-Debug-330fe0efc665bb4d399b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "mprpc",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "mylogger",
+					"childIndexes" : 
+					[
+						12
+					],
+					"jsonFile" : "directory-mylogger-Debug-c40f54a73020c3f27b08.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "mylogger",
+					"targetIndexes" : 
+					[
+						5
+					]
+				},
+				{
+					"build" : "mylogger/test",
+					"jsonFile" : "directory-mylogger.test-Debug-71e041262a72cc9581d2.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 11,
+					"projectIndex" : 0,
+					"source" : "mylogger/test",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12
+					],
+					"name" : "MyMprpc",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 12,
+					"id" : "LogFileTest::@6a957b30d320fad48033",
+					"jsonFile" : "target-LogFileTest-Debug-92d9da8ad946a9a4fa9d.json",
+					"name" : "LogFileTest",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "call_f_list::@400b20511124763f225d",
+					"jsonFile" : "target-call_f_list-Debug-396e858275d050d14f77.json",
+					"name" : "call_f_list",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "caller::@3ed8007200df6ca9bb40",
+					"jsonFile" : "target-caller-Debug-7019cd223ba0fba31ace.json",
+					"name" : "caller",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "get_f_list::@fa14dc439410a1479d3e",
+					"jsonFile" : "target-get_f_list-Debug-0e2f2ae53ef1dd4c9df2.json",
+					"name" : "get_f_list",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 10,
+					"id" : "mprpc::@faee61cf98b917a6e1f0",
+					"jsonFile" : "target-mprpc-Debug-c3db1a6bdd564d1decae.json",
+					"name" : "mprpc",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 11,
+					"id" : "mylogger::@f64cce037ef0f4943245",
+					"jsonFile" : "target-mylogger-Debug-35505554430a27a85ba1.json",
+					"name" : "mylogger",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "mymuduo::@04e4bf40c083795bed45",
+					"jsonFile" : "target-mymuduo-Debug-8467de9499d333e33e3b.json",
+					"name" : "mymuduo",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "provider::@a1efac48525dcd91a00f",
+					"jsonFile" : "target-provider-Debug-367857911969a06e2b3d.json",
+					"name" : "provider",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "test01::@050e982002870d2cd7fa",
+					"jsonFile" : "target-test01-Debug-622b2b3cb59c0484a4ac.json",
+					"name" : "test01",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "test02::@050e982002870d2cd7fa",
+					"jsonFile" : "target-test02-Debug-07b35374582478333c2e.json",
+					"name" : "test02",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/liuchen/\u9879\u76ee/MPRPC/build",
+		"source" : "/home/liuchen/\u9879\u76ee/MPRPC"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/provider.dir/userservice.cc.o CMakeFiles/provider.dir/__/__/mprpc/src/user.pb.cc.o -o provider  /home/liuchen/项目/MPRPC/lib/libmprpc.a -lprotobuf -lmymuduo -lpthread 

@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"future": "cpp",
+			"typeindex": "cpp",
+			"typeinfo": "cpp",
+			"*.inc": "cpp",
+			"cstdio": "cpp",
+			"*.tcc": "cpp",
+			"*.ipp": "cpp",
+			"chrono": "cpp",
+			"condition_variable": "cpp",
+			"mutex": "cpp",
+			"shared_mutex": "cpp",
+			"sstream": "cpp",
+			"thread": "cpp",
+			"memory_resource": "cpp"
+		}
+	}
+}
