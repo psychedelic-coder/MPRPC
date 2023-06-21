@@ -44,7 +44,6 @@ RPC（Remote Procedure Call Protocol）远程过程调用协议。
 #include <unistd.h>
 #include <memory>
 #include <mylogger/Logger.h>
-#include <mylogger/LogFile.h>
 
 std::unique_ptr<mylogger::LogFile> g_logFile;
 
