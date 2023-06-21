@@ -1,0 +1,32 @@
+syntax = "proto3";
+
+package fixbug; // 声明了代码所在的包（对于C++来说是namespace）
+
+//定义下面的选项，表示生成service服务类和rpc方法描述，默认不生成
+option cc_generic_services = true;
+
+message FLResultCode  //封装一下失败类
+{
+    int32 errcode = 1;
+    bytes errmsg = 2;
+}
+
+// 定义登录响应消息类型
+message GetFriendListRequest
+{
+    uint32 userid = 1;
+}
+
+message GetFriendListResponse
+{
+    FLResultCode result = 1;
+    repeated bytes friends = 2;
+}
+
+// 定义服务(Service)
+// 好友模块
+service FriendServiceRpc
+{
+    // rpc关键字 服务函数名(传入参数) 返回(返回参数)
+    rpc GetFriendList(GetFriendListRequest) returns(GetFriendListResponse);
+}

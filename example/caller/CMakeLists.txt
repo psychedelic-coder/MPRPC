@@ -1,0 +1,2 @@
+add_subdirectory(Login)
+add_subdirectory(GetFriendsLists)

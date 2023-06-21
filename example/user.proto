@@ -1,0 +1,54 @@
+syntax = "proto3";
+
+package fixbug; // 声明了代码所在的包（对于C++来说是namespace）
+
+//定义下面的选项，表示生成service服务类和rpc方法描述，默认不生成
+option cc_generic_services = true;
+
+message ResultCode  //封装一下失败类
+{
+    int32 errcode = 1;
+    bytes errmsg = 2;
+}
+
+// 定义登录响应消息类型
+message LoginRequest
+{
+    bytes name = 1;
+    bytes pwd = 2;
+}
+
+message LoginResponse
+{
+    ResultCode result = 1;
+    bool sucess = 2;
+}
+
+// 定义服务(Service)
+// 将消息类型用在RPC系统中，在.proto文件中定义一个RPC服务接口，protobuf编译器
+// 会根据所选择语言生成对应语言的业务接口代码及存根。
+service UserServiceRpc
+{
+    // rpc关键字 服务函数名(传入参数) 返回(返回参数)
+    rpc Login(LoginRequest) returns(LoginResponse);
+}
+
+// 定义RPC方法需要先在.proto文件定义
+/*message RegisterRequest
+{
+    uint32 id = 1;
+    bytes name = 1;
+    bytes pwd = 2;
+}
+
+message RegisterResponse
+{
+    ResultCode result = 1;
+    bool sucess = 2;
+}
+
+service UserServiceRpc
+{
+    // rpc关键字 服务函数名(传入参数) 返回(返回参数)
+    rpc Register(RegisterRequest) returns(RegisterResponse);
+}*/
