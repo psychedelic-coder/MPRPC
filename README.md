@@ -75,9 +75,7 @@ int main(int argc, char *argv[])
 
   for (int i = 0; i < 10000; ++i)
   {
-      
     LOG_INFO << line;
-
     usleep(1000);
   }
 }
