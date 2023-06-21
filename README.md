@@ -35,3 +35,51 @@ RPC（Remote Procedure Call Protocol）远程过程调用协议。
   库和zookeeper服务配置中心（专门做服务发现）
 
 - mprpc框架主要包含以上两个部分的内容
+
+## 高性能日志模块
+
+### 使用说明
+
+```C++
+#include <unistd.h>
+#include <memory>
+#include <mylogger/Logger.h>
+#include <mylogger/LogFile.h>
+
+std::unique_ptr<mylogger::LogFile> g_logFile;
+
+void outputFunc(const char *msg, int len)
+{
+  g_logFile->append(msg, len);
+}
+// 一般不用改flushFunc函数
+void flushFunc()
+{
+  g_logFile->flush();
+}
+
+int main(int argc, char *argv[])
+{
+  // 日志文件名字
+  std::string name = "123";
+  // 初始化一个LogFile日志文件
+  // mylogger::LogFile::LogFile(const std::string &basename, int flushEveryN = 1024)
+  g_logFile.reset(new mylogger::LogFile(name, 1000));
+  // 设定Logger输出函数为outputFunc，在本例中日志输出到文件123里面
+  mylogger::Logger::setOutput(outputFunc);
+  // 设定Logger刷新日志函数为flushFunc
+  mylogger::Logger::setFlush(flushFunc);
+
+  // 要写的日志信息
+  std::string line = "1234567890 abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ ";
+
+  for (int i = 0; i < 10000; ++i)
+  {
+      
+    LOG_INFO << line;
+
+    usleep(1000);
+  }
+}
+```
+
